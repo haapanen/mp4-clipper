@@ -21,7 +21,6 @@ def cli(clip: str, output: str, overwrite: bool, start: int, end: int):
         print("output must be specified")
         exit(2)
     
-    copy_number = 1
     if not overwrite and os.path.exists(output):
         print(f"{output} already exists")
         exit(3)
